@@ -1,7 +1,0 @@
-CREATE TABLE m_prefecture(
-PREFECTURE_CODE int not NULL,
-PREFECTURE_REGION varchar(22) not NULL,
-PREFECTURE_NAME varchar(8) not NULL,
-PREFECTURE_KANA_NAME varchar(12) not NULL
-primary key(PREFECTURE_CODE)
-);
