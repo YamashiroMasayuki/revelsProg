@@ -1,0 +1,5 @@
+CREATE TABLE m_date(
+KBN_DATE tinyint not null PRIMARY KEY,
+MAIN_DATE Date not null,
+DAY_OF_WEEK_TIME Varchar(1) not null,
+)
