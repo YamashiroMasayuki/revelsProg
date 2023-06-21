@@ -1,0 +1,8 @@
+CREATE TABLE m_mail(
+USER_ID Varchar(8) not null PRIMARY KEY,
+MAIL_CATEGORY tinyint not null,
+FIX_DATE_TIME Date not null,
+FIX_STARTWORK_TIME_TIME Time,
+FIX_FINISHWORK_TIME Time,
+MAIL_REMARKS Varchar(255),
+)

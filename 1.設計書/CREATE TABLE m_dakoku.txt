@@ -1,0 +1,9 @@
+CREATE TABLE m_dakoku(
+USER_ID Varchar(8) not null,
+KBN_DATE tinyint not null default 0,
+STARTWORK_TIME Time,
+FINISHWORK_TIME Time,
+IS_YUKYU tinyint not null default 0,
+DAKOKU_STATUS_KBN tinyint not null default 0,
+PRIMARY KEY(USER_ID, KBN_DATE)
+)
