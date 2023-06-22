@@ -1,6 +1,6 @@
 CREATE TABLE m_dakoku(
 USER_ID Varchar(8) not null,
-KBN_DATE tinyint not null default 0,
+DAKOKU_DATE DATE not null default 0,
 STARTWORK_TIME Time,
 FINISHWORK_TIME Time,
 IS_YUKYU tinyint not null default 0,
