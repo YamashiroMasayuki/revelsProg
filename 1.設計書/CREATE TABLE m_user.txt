@@ -1,6 +1,6 @@
 CREATE TABLE m_user(
 USER_ID Varchar(8) not null PRIMARY KEY,
-KBN_DATE tinyint not null,
+USER_PASS Varchar(10) not null,
 USER_FIRSTNAME Varchar(10) not null,
 USER_LASTNAME Varchar(10) not null,
 USER_YUKYUBI tinyint not null,
