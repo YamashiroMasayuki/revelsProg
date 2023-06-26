@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <link th:href="@{/css/CommonLayoutCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/CommonCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/DakokuCss.css}" rel="stylesheet" type="text/css" />
+  <script th:src="@{/js/DakokuJs.js}"></script>
+  <script th:src="@{/js/CommonLayoutJs.js}"></script>
+</head>
+<body>
+	<div th:replace="/CommonLayout::header"></div>
+	<p class="dakoku_title">勤怠打刻</p>
+	<div class="kinmu_status"><p th:text="${kinmuStatus}"></p></div>
+	<form action="/Dakoku/UpDate" method="post" name="dakokuUpdate">
+		<div class="date_area">
+			<div class="system_date">
+				<div id="systemDate"></div>
+			</div>
+			<input class="systemViewDate" type="hidden" name="systemViewDate" value="" />
+			<div class="date_now">
+				<div id="systemTime"></div>
+			</div>
+			<input class="systemViewTime" type="hidden" name="systemViewTime" value="" />
+		</div>
+		<div class="btn_area">
+			<input class="dakokuFlg" type="hidden" name="dakokuFlg" value="" />
+			<div class="sizeL_btn syukkin_btn">出勤</div>
+			<div class="sizeL_btn taikin_btn">退勤</div>
+		</div>
+	</form>
+</body>
+</html>
+

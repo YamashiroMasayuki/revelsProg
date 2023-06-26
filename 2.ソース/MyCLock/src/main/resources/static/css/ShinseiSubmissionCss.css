@@ -1,0 +1,68 @@
+/*記述内容のエリア*/
+.inputBtn_area{
+	width: 600px;
+	margin: auto;
+}
+
+/*申請書種類のエリア*/
+.category_area{
+	margin-left: 35px;
+}
+.shinsei_category{
+	text-align: center;
+	margin:0;
+}
+.shiseiSubmision_title{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.shiseiCategory_input{
+	padding: 10px;
+	width: 200px;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+
+/*打刻修正用のエリア*/
+.dakokuEdit_area{
+	margin-top: 50px;
+	margin-left: 35px;	
+}
+.dakokuEdit_input{
+	padding: 10px;
+	width: 550px;
+	display: flex;
+	border: 1px solid rgb(0, 0, 0);
+}
+.input_flex{
+	display: flex;
+}
+textarea {
+	resize: none;
+	width: 275px;
+	height: 90px;
+}
+
+
+/*有給申請用のエリア*/
+.yukyuShinsei_area{
+	margin-top: 20px;
+	margin-left: 35px;	
+}
+.yukyuShinsei_input{
+	padding: 10px;
+	width: 500px;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+/*ボタン初期値*/
+.souhu_btn{
+	background-color: rgb(173, 225, 251);
+	margin-top: 10px;
+	margin-left: 500px;
+}
+
+
+
+

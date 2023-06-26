@@ -1,0 +1,142 @@
+/*検索条件エリアと表示領域*/
+.userSerchView_area{
+	display: flex;
+	min-width: 800px;
+	justify-content: center;
+}
+
+/*検索条件エリア*/
+.kensakuInfo_area{
+	width: 276px;
+	height: 72px;
+	padding: 15px;
+	border: 1px solid rgb(0, 0, 0);
+}
+/*ユーザーIDエリア*/
+.kensakuInfoUserID_area{
+	display: flex;
+}
+/*氏名性エリア*/
+.kensakuInfoUserFName_area{
+	display: flex;
+	margin-left: 2px;
+}
+/*氏名名エリア*/
+.kensakuInfoUserLName_area{
+	display: flex;
+	margin-left: 2px;
+}
+
+/*検索ボタンエリア*/
+.serchBtn_area{
+	display: flex;
+	justify-content: flex-end;
+	width: 305px;
+	margin-top: 5px;
+}
+
+/*検索ユーザー表示エリア*/
+.viewUser_area{
+	width: 488px;
+	height: 150px;
+    overflow:auto;
+	margin: auto;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+/*タイトル部共通*/
+.commonTitleDisp_data{
+	border: 1px solid rgb(0, 0, 0);
+	text-align: center;
+	justify-content: center;
+	background-color: rgb(192, 192, 192);
+}
+.viewUser_title{
+	display: flex;
+}
+/*タイトル要素*/
+.UserID_title{
+	width: 140px;
+}
+.UserFName_title{
+	width: 140px;
+}
+.UserLName_title{
+	width: 140px;
+}
+.hyouji_title{
+	width: 60px;
+}
+
+/*検索ユーザー表示データエリア*/
+.viewUser_data{
+	display: flex;
+}
+/*データ部共通*/
+.commonDataDisp_data{
+	display: flex;
+	align-items: center;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+/*データ部要素*/
+.UserID_data{
+	width: 140px;
+	height: 30px;
+	text-align:center;
+	justify-content: center;
+}
+.UserFName_data{
+	width: 140px;
+	height: 30px;
+}
+.UserLName_data{
+	width: 140px;
+	height: 30px;
+}
+.hyouji_data{
+	width: 60px;
+	height: 30px;
+	text-align:center;
+	justify-content: center;
+}
+
+/*ユーザー情報編集部*/
+.editInfoUpdateBtn_area{
+	margin-top: 20px;
+	min-width: 480px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.editUserInfo_area{
+	width: 450px;
+	height: 72px;
+	display: flex;
+	padding: 15px;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+
+.editInfoUserFName_area{
+	margin-left: 2px;
+}
+.editInfoUserLName_area{
+	margin-left: 2px;
+}
+
+/*更新ボタン*/
+.update_btn_area{
+	width: 450px;
+	display: flex;
+	justify-content: flex-end;
+}
+.update_btn{
+	background-color: rgb(173, 225, 251);
+}
+
+
+
+
+
+

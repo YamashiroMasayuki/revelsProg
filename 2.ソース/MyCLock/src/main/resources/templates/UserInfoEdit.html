@@ -1,0 +1,103 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <link th:href="@{/css/CommonLayoutCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/CommonCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/UserInfoEditCss.css}" rel="stylesheet" type="text/css" />
+  <script th:src="@{/js/UserInfoEditJs.js}"></script>
+  <script th:src="@{/js/CommonLayoutJs.js}"></script>
+</head>
+<body>
+	<div th:replace="/CommonLayout::header"></div>
+
+	<form action="/UserInfoEdit/SerchView" method="post" name="userEditSerch">
+	<div class="userSerchView_area">
+    	<div class="kensakuInfoBtn_area">
+    		<div class="kensakuInfo_area">
+			<form action="/UserInfoEdit/SerchUser" method="post" name="serchUserInfo">
+				<div class="kensakuInfoUserID_area">
+					<label>ユーザーID：</label>
+					<input type="text" name="inputUserID">
+				</div>	
+				<div class="kensakuInfoUserFName_area">
+					<label>氏名　性　：</label>
+					<input type="text" name="inputFName">
+				</div>	
+				<div class="kensakuInfoUserLName_area">
+					<label>氏名　名　：</label>
+					<input type="text" name="inputLName">
+				</div>	
+			</form>
+			</div>
+			<div class="serchBtn_area">
+				<div class="sizeS_btn" onclick="serchBtnClick()">検索</div>
+			</div>
+		</div>
+	</div>
+	</form>
+		
+    	<div class="viewUser_area">
+			<div class="viewUser_title">
+				<div class="UserID_title commonTitleDisp_data">ユーザーID</div>	
+				<div class="UserFName_title commonTitleDisp_data">氏名　性</div>	
+				<div class="UserLName_title commonTitleDisp_data">氏名　名</div>	
+				<div class="hyouji_title commonTitleDisp_data">表示</div>
+			</div>
+			<div class="viewUser_data">
+				<div class="UserID_data commonDataDisp_data">ユーザーID</div>	
+				<div class="UserFName_data commonDataDisp_data">氏名　性</div>	
+				<div class="UserLName_data commonDataDisp_data">氏名　名</div>
+				<div class="hyouji_data commonDataDisp_data"><input type="button" value="表示"></div>
+			</div>
+		</div>
+	</div>
+	
+    <div class="editInfoUpdateBtn_area">
+		<form action="/UserInfoEdit/UpdateUserInfo" method="post" name="updateUserInfo">
+		<div class="editUserInfo_area">
+    		<div class="editFirstInfo_area">
+				<div class="editInfoUserID_area">
+					<label for="readonly">ユーザーID：</label>
+					<input type="text" name="inputUserID" value="" >
+				</div>	
+				<div class="editInfoUserFName_area">
+					<label>氏名　性　：</label>
+					<input type="text" name="inputFName">
+				</div>	
+				<div class="editInfoUserLName_area">
+					<label>氏名　名　：</label>
+					<input type="text" name="inputLName">
+				</div>
+			</div>
+			<div class="editSecoundInfo_area">	
+				<div class="editInfoUserLName_area">
+					<label>管理者権限：</label>
+					<select name="adminFlg" id="admin_select">
+    					<option value="check">無し</option>
+    					<option value="noCheck">有り</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		</form>
+		<div class="update_btn_area">
+			<div class="sizeS_btn update_btn" onclick="updateBtnClick()">更新</div>
+		</div>
+		
+		
+		
+		
+	</div>
+	
+	
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <link th:href="@{/css/CommonLayoutCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/CommonCss.css}" rel="stylesheet" type="text/css" />
+  <script th:src="@{/js/CommonLayoutJs.js}"></script>
+<html xmlns:th="http://www.thymeleaf.org">
+  <header th:fragment="header">
+	<div class="headerBackColor_area">
+	  <p class="layout_title">勤怠管理システム　C Lock</p>
+	  <div class="header_area">
+	  	<div id="common_area">
+	  		<div class="sizeM_btn" onclick="redirectKintaiCheckBtnClick()">勤怠時間一覧確認</div>
+	  		<div class="sizeM_btn" onclick="redirectDakokuBtnClick()">勤怠打刻</div>
+	  	</div>
+	  	<div id="general_area">
+	  		<div class="sizeM_btn" onclick="redirectShinseiSubmissionBtnClick()">申請書提出</div>
+	  	</div>
+	  	<div id="administrator_area">
+	  		<div class="sizeM_btn" onclick="redirectShinseiCheckBtnClick()">申請書確認</div>
+	  		<div class="sizeM_btn" onclick="redirectUserInfoEditBtnClick()">ユーザー情報修正</div>
+	  		<div class="sizeM_btn" onclick="redirectKintaiInfoEditBtnClick()">勤怠時間修正</div>
+	  	</div>
+	  	
+	  	
+	  	
+	<th:block th:if="${generalFlg == true}">
+	  	<div id="general_area">
+	  		<div class="sizeM_btn" onclick="redirectShinseiSubmissionBtnClick()">申請書提出</div>
+	  	</div>
+	</th:block>
+	  </div>
+ 	</div>
+	<form action="/KintaiCheck" method="post" name="kintaiCheckScreen"></form>
+	<form action="/Dakoku" method="post" name="dakokuScreen"></form>
+	<form action="/ShinseiSubmission" method="post" name="shinseiSubmissionScreen"></form>
+	<form action="/ShinseiCheck" method="post" name="shinseiCheckScreen"></form>
+	<form action="/UserInfoEdit" method="post" name="userInfoEditScreen"></form>
+	<form action="/KintaiInfoEdit" method="post" name="kintaiInfoEditScreen"></form>
+  </header>
+</html>

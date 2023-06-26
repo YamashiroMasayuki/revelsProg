@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <link th:href="@{/css/LoginCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/CommonCss.css}" rel="stylesheet" type="text/css" />
+  <script th:src="@{/js/LoginJs.js}"></script>
+</head>
+<body>
+	<div class="title_area">
+		<p class="main_title">勤怠管理システム</p>
+	</div>
+	<div class="loginInfomation_description">
+		<form action="/Login/LoginCheck" method="post" name="loginInfo">
+			<div class="label_userID">
+				<label>ID : </label>
+				<input type="text" placeholder="ユーザーID" name="inputUserID">
+			</div>
+			<div class="label_password">
+				<label>Pass : </label>
+				<input type="text" placeholder="Password" name="inputUserPass">
+			</div>
+		</form>
+		<div class="sizeS_btn click_btn" onclick="loginBtnClick()">ログイン</div>
+		<th:block th:if="${errorMsgFlg == true}">
+			<div class="errorMessage" style="color: red;"><p th:text="${errorMsg}"></p></div>
+		</th:block>
+		
+	</div>
+	<form action="/Login/RedirectUserRegister" method="post" name="userRegister"></form>
+	
+		
+		
+</body>
+</html>
+

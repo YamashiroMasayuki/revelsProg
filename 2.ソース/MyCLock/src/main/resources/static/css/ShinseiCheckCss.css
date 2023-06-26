@@ -1,0 +1,123 @@
+/*申請情報エリア*/
+.shiseniRireki_area{
+	width: 650px;
+	height: 300px;
+	margin:auto;
+	border: 1px solid rgb(0, 0, 0);
+}
+/*申請情報タイトルエリア*/
+.ShinseiRireki_title{
+	display: flex;
+}
+/*タイトル部共通*/
+.commonTitleDisp_data{
+	display: flex;
+	border: 1px solid rgb(0, 0, 0);
+	text-align: center;
+	justify-content: center;
+	background-color: rgb(192, 192, 192);
+}
+/*タイトル要素*/
+.shiseiKahi_title{
+	width: 70px;
+}
+.shinseisya_title{
+	width: 140px;
+}
+.category_title{
+	width: 140px;
+}
+.biko_title{
+	width: 250px;
+}
+.hyouji_title{
+	width: 60px;
+}
+
+/*申請情報データエリア*/
+.ShinseiRireki_data{
+	display: flex;
+}
+/*データ部共通*/
+.commonDataDisp_data{
+	display: flex;
+	align-items: center;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+/*データ部要素*/
+.shiseiKahi_data{
+	width: 70px;
+	height: 30px;
+	text-align:center;
+	justify-content: center;
+}
+.shinseisya_data{
+	width: 140px;
+	height: 30px;
+}
+.category_data{
+	width: 140px;
+	height: 30px;
+}
+.biko_data{
+	width: 250px;
+	height: 30px;
+}
+.hyouji_data{
+	width: 60px;
+	height: 30px;
+	text-align:center;
+	justify-content: center;
+}
+
+/*申請内容表示エリア*/
+.shinseiKakunin_area{
+	margin:auto;
+	width: 650px;
+	padding: 20px 20px 10px 20px;
+}
+/*申請者表示エリア*/
+.shinseisyaKakunin_area{
+	display: flex;
+	height: 30px;
+}
+
+/*申請カテゴリー表示エリア*/
+.categoryKakunin_area{
+	display: flex;
+	height: 30px;
+}
+
+/*申請内容表示エリア*/
+.naiyouKakunin_area{
+	display: flex;
+}
+/*申請内容*/
+.naiyouKakunin_name{
+	width: 510px;
+	height: 150px;
+	padding: 5px;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+/*ボタン*/
+.shinseiJudgeBtn_area{
+	display: flex;
+	margin:auto;
+	width: 670px;
+	justify-content: flex-end;
+}
+.kyoka_btn{
+	background-color: rgb(173, 225, 251);
+}
+.hinin_btn{
+	background-color: rgb(255, 190, 190);
+	margin-left: 20px;
+}
+
+
+
+
+
+
