@@ -5,4 +5,5 @@ FIX_DATE_TIME Date not null,
 FIX_STARTWORK_TIME Time,
 FIX_FINISHWORK_TIME Time,
 MAIL_REMARKS Varchar(255),
+SHINSEI_STATUS_KBN tinyint not null,
 )
