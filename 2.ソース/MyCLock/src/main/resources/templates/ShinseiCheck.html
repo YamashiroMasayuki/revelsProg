@@ -1,0 +1,54 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <link th:href="@{/css/CommonLayoutCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/CommonCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/ShinseiCheckCss.css}" rel="stylesheet" type="text/css" />
+  <script th:src="@{/js/ShinseiCheckJs.js}"></script>
+  <script th:src="@{/js/CommonLayoutJs.js}"></script>
+</head>
+<body>
+	<div th:replace="/CommonLayout::header"></div>
+    <div class="shiseniRireki_area">
+		<div class="ShinseiRireki_title">
+			<div class="shiseiKahi_title commonTitleDisp_data">申請可否</div>	
+			<div class="shinseisya_title commonTitleDisp_data">申請者</div>	
+			<div class="category_title commonTitleDisp_data">申請カテゴリー</div>	
+			<div class="biko_title commonTitleDisp_data">申請備考</div>	
+			<div class="hyouji_title commonTitleDisp_data">表示</div>	
+		</div>
+		<div class="ShinseiRireki_data">
+			<div class="shiseiKahi_data commonDataDisp_data">申請可否</div>	
+			<div class="shinseisya_data commonDataDisp_data">申請者</div>	
+			<div class="category_data commonDataDisp_data">申請カテゴリー</div>	
+			<div class="biko_data commonDataDisp_data">申請備考</div>	
+			<div class="hyouji_data commonDataDisp_data"><input type="button" value="表示"></div>	
+		</div>
+		
+	</div>
+
+	<div class="shinseiKakunin_area">
+		<div class="shinseisyaKakunin_area">
+			<div class="shinseisyaKakunin_title">申請者　　　　：</div>
+			<div class="shinseisyaKakunin_name">aaaa<p th:text="${shinseisyaKakuninName}"></p></div>
+		</div>	
+		<div class="categoryKakunin_area">
+			<div class="categoryKakunin_title">申請カテゴリー：</div>
+			<div class="categoryKakunin_name">aaa<p th:text="${categoryKakuninName}"></p></div>
+		</div>		
+		<div class="naiyouKakunin_area">
+			<div class="naiyouKakunin_title">申請内容　　　：</div>
+			<div class="naiyouKakunin_name">aaaaa<p th:text="${naiyouKakunin}"></p></div>
+		</div>	
+	</div>
+		
+	<div class="shinseiJudgeBtn_area">
+	    <div class="sizeS_btn kyoka_btn">許可</div>
+	    <div class="sizeS_btn hinin_btn">否認</div>
+	</div>
+
+
+
+
+</body>
+</html>

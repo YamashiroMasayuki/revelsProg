@@ -1,0 +1,101 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <link th:href="@{/css/CommonLayoutCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/CommonCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/KintaiCheckCss.css}" rel="stylesheet" type="text/css" />
+  <script th:src="@{/js/KintaiCheckJs.js}"></script>
+  <script th:src="@{/js/CommonLayoutJs.js}"></script>
+</head>
+<body>
+	<div th:replace="/CommonLayout::header"></div>
+
+	<div class="userSerchView_area">
+    	<div class="kensakuInfoBtn_area">
+    		<div class="kensakuInfo_area">
+			<form action="/UserInfoEdit/SerchUser" method="post" name="serchUserInfo">
+				<div class="kensakuInfoUserID_area">
+					<label>ユーザーID：</label>
+					<input type="text" name="inputUserID">
+				</div>	
+				<div class="kensakuInfoUserFName_area">
+					<label>氏名　性　：</label>
+					<input type="text" name="inputFName">
+				</div>	
+				<div class="kensakuInfoUserLName_area">
+					<label>氏名　名　：</label>
+					<input type="text" name="inputLName">
+				</div>	
+			</form>
+			</div>
+			<div class="serchBtn_area">
+				<div class="sizeS_btn" onclick="serchBtnClick()">検索</div>
+			</div>
+		</div>
+		
+    	<div class="viewUser_area">
+			<div class="viewUser_title">
+				<div class="UserID_title commonTitleDisp_data">ユーザーID</div>	
+				<div class="UserFName_title commonTitleDisp_data">氏名　性</div>	
+				<div class="UserLName_title commonTitleDisp_data">氏名　名</div>	
+				<div class="hyouji_title commonTitleDisp_data">表示</div>
+			</div>
+			<div class="viewUser_data">
+				<div class="UserID_data commonDataDisp_data">ユーザーID</div>	
+				<div class="UserFName_data commonDataDisp_data">氏名　性</div>	
+				<div class="UserLName_data commonDataDisp_data">氏名　名</div>
+				<div class="hyouji_data commonDataDisp_data"><input type="button" value="表示"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="kintaiView_area">
+		<div class="kintaiViewSelect_area">
+			<div class="dateName_area">
+			<select name="yearSelect" id="year_select">
+    			<option value="1">2022年</option>
+    			<option value="2">2023年</option>
+    			<option value="3">2024年</option>
+			</select>
+			<select name="monthSelect" id="month_select">
+    			<option value="1">01月</option>
+    			<option value="2">02月</option>
+    			<option value="3">03月</option>
+    			<option value="4">04月</option>
+    			<option value="5">05月</option>
+    			<option value="6">06月</option>
+    			<option value="7">07月</option>
+    			<option value="8">08月</option>
+    			<option value="9">09月</option>
+    			<option value="10">10月</option>
+    			<option value="11">11月</option>
+    			<option value="12">12月</option>
+			</select>
+			<p class="viewUserName">aaaaa</p>
+			</div>
+			<div class="sizeS_btn csv_btn" onclick="csvBtnClick()">CSV出力</div>
+		</div>
+		
+		<div class="viewDakoku_area">
+			<div class="viewTitle_area">
+				<div class="viewDataTitle_area commonTitleDisp_data">日付</div>
+				<div class="viewDataTitle_area commonTitleDisp_data">出勤時間</div>
+				<div class="viewDataTitle_area commonTitleDisp_data">退勤時間</div>
+				<div class="viewDataTitle_area commonTitleDisp_data">日付</div>
+				<div class="viewDataTitle_area commonTitleDisp_data">出勤時間</div>
+				<div class="viewDataTitle_area commonTitleDisp_data">退勤時間</div>	
+			</div>	
+			
+			<div class="viewData_area">
+				<div class="viewDataTitle_area commonDataDisp_data">日付</div>
+				<div class="viewDataTitle_area commonDataDisp_data">出勤時間</div>
+				<div class="viewDataTitle_area commonDataDisp_data">退勤時間</div>
+				<div class="viewDataTitle_area commonDataDisp_data">日付</div>
+				<div class="viewDataTitle_area commonDataDisp_data">出勤時間</div>
+				<div class="viewDataTitle_area commonDataDisp_data">退勤時間</div>	
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
