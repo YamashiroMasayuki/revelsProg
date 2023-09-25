@@ -19,6 +19,13 @@ public class DakokuController {
 
         model.addAttribute("generalFlg", "true" );
 		var _worker = new DakokuWorkerService();
+		var _commonWorker = new CommonWorkerService();
+		
+		//ログインユーザーで本日文のDBが登録されているかの確認
+		//データが存在しない場合のみ新しくinsertをする。
+		if(_commonWorker.getKintaiDate("admin") == 2) {
+			_commonWorker.insertKintaiDate("admin");
+		}
 		
         model.addAttribute("kinmuStatus", "退勤中" );
 		return redirectDakokuUrl;
@@ -33,9 +40,9 @@ public class DakokuController {
 		if(dakokuFlg == true) {
 			//出勤時間を更新する。
 			var _commonWorker = new CommonWorkerService();
-			if(0 != _commonWorker.insertDakokuData(systemViewDate, systemViewDate, systemViewTime)) {
+			//if(0 != _commonWorker.setKintaiDate(userID, systemViewDate, dakokuFlg)) {
 				
-			}
+			//}
 			
 			
 			

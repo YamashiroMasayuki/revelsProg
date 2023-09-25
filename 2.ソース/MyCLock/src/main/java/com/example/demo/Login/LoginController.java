@@ -33,7 +33,7 @@ public class LoginController {
 		}
 		else {
 			var _commonWorker = new CommonWorkerService();
-			//ログイン時使用したIDとパスが正しいかどうかを判断する。正しい場合値が入ってくる。
+			//ログイン時使用したIDとパスが正しいかどうかを判断する。正しい場合UserIDが入ってくる。
 			String methodKekka = "";
 			methodKekka = _commonWorker.getLoginCustomerData(inputUserID, inputUserPass);
 			if( methodKekka == "" ) {
@@ -42,8 +42,8 @@ public class LoginController {
 			}
 			else {
 				//値がある場合、次のログイン後画面に進む。
+				//redirectUrl = "/CommonLayout/" + methodKekka;
 				redirectUrl = "/CommonLayout";
-				attributes.addFlashAttribute("adminFlg", methodKekka);
 			}
 		}
 
