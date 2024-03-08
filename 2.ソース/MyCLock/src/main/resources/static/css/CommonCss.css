@@ -1,0 +1,65 @@
+/*display:none付与用*/
+.displayNone{
+	display: none;
+}
+/*共通Body背景色*/
+body {
+  background-color: rgb(255, 218, 168);
+}
+.btnNone{
+	background-color: rgb(192, 192, 192);
+	pointer-events: none;
+}
+
+/*ボタン種類*/
+/*小ボタン*/
+.sizeS_btn{
+	width: 80px;
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 2px 2px 2px 2px rgb(128, 128, 128);
+	cursor: pointer;
+}
+/*中ボタン*/
+.sizeM_btn{
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 2px 2px 2px 2px rgb(128, 128, 128);
+	cursor: pointer;
+}
+/*大ボタン*/
+.sizeL_btn{
+	width: 120px;
+	height: 20px;
+	padding: 30px;
+	text-align: center;
+	font-size: 20px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 2px 2px 2px 2px rgb(128, 128, 128);
+	cursor: pointer;
+}
+
+/*ボタンのホバー処理*/
+.sizeS_btn:hover{
+	background-color: rgb(255, 255, 128);
+}
+.sizeM_btn:hover{
+	background-color: rgb(255, 255, 128);
+}
+.sizeL_btn:hover{
+	background-color: rgb(255, 255, 128);
+}

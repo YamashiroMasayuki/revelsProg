@@ -1,0 +1,48 @@
+/*ヘッダー部背景*/
+.headerBackColor_area{
+	background-color: #8cb98c;
+	padding: 20px;
+	border-radius: 20px;
+	min-width: 650px;
+}
+/*ヘッダータイトル*/
+.layout_title{
+	text-align: center;
+	font-size: 20px;
+	margin:0;
+}
+/*表示画面領域*/
+.header_area{
+	display: flex;
+	justify-content: center;
+}
+.header_area div{
+	display: flex;
+}
+	
+/*共通画面エリア*/
+#common_area .sizeM_btn{
+	background-color: rgb(255, 255, 255);
+}
+#common_area .sizeM_btn:hover{
+	background-color: rgb(255, 255, 128);
+}
+/*一般画面エリア*/
+#general_area .sizeM_btn{
+	background-color: rgb(128, 255, 255);
+}
+#general_area .sizeM_btn:hover{
+	background-color: rgb(255, 255, 128);
+}
+/*管理者画面エリア*/
+#administrator_area .sizeM_btn{
+	background-color: rgb(255, 128, 128);
+}
+#administrator_area .sizeM_btn:hover{
+	background-color: rgb(255, 255, 128);
+}
+
+
+
+
+

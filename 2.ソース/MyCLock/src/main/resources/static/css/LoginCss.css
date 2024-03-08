@@ -1,0 +1,40 @@
+/*タイトルエリア*/
+.title_area{
+	text-align: center;
+	padding-top : 40px;
+}
+.sub_title{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.main_title{
+	font-size: 40px;
+	margin: 10px 0px;
+}
+
+/*情報入力エリア*/
+.loginInfomation_description{
+	margin: auto;
+	width: 230px;
+}
+
+/*ユーザーIDラベル*/
+.label_userID{
+	display: flex;
+	padding-left: 15px;
+}
+.label_userID input{
+	width: 100px;
+}
+
+/*ユーザーPassラベル*/
+.label_password{
+	display: flex;
+}
+
+/*エラーメッセージ*/
+.errorMessage{
+	margin-top:10px;
+	font-size: 12px;
+}
+

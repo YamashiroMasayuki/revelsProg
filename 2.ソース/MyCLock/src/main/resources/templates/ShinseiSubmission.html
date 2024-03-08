@@ -1,0 +1,72 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <link th:href="@{/css/CommonLayoutCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/CommonCss.css}" rel="stylesheet" type="text/css" />
+  <link th:href="@{/css/ShinseiSubmissionCss.css}" rel="stylesheet" type="text/css" />
+  <script th:src="@{/js/ShinseiSubmissionJs.js}"></script>
+  <script th:src="@{/js/CommonLayoutJs.js}"></script>
+</head>
+<body>
+	<div th:replace="/CommonLayout::header"></div>
+
+<div class="inputBtn_area">
+	<div class="category_area">
+		<div class="shiseiSubmision_title">申請書種類</div>
+		<div class="shiseiCategory_input">
+			<input type="radio" id="radioDakoku" name="radioCheck" value="radioDakoku" />
+      		<label>打刻修正</label>
+      		<input type="radio" id="radioYukyu" name="radioCheck" value="radioYukyu" />
+      		<label>有給申請</label>
+		</div>
+	</div>
+
+	<div class="dakokuEdit_area">
+		<div class="shiseiSubmision_title">打刻修正用</div>
+		<div class="dakokuEdit_input">
+			<div class="dakokuDateTime_area">
+				<div class="input_flex">
+					<label>変更日付：</label> 
+					<input type="date" id="date" name="shinseiDate" value="" />
+				</div>
+				<div class="input_flex">
+					<label>出勤時間：</label> 
+					<input type="time" id="time" name="syukkinTime" value="" />
+				</div>
+				<div class="input_flex">
+					<label>退勤時間：</label> 
+					<input type="time" id="time" name="taikinTime" value="" />
+				</div>
+			</div>
+			<div class="input_flex">
+				<label>申請備考：</label> 
+				<textarea name="inputBiko" maxlength="100" placeholder="100文字以内記述可"></textarea>
+			</div>
+		</div>
+
+	</div>
+	
+	<div class="yukyuShinsei_area">
+		<div class="shiseiSubmision_title">有給申請用</div>
+		<div class="yukyuShinsei_input">
+			<div class="dakokuDateTime_area">
+				<div class="input_flex">
+					<label>変更日付：</label> 
+					<input type="date" id="date" name="shinseiDate" value="" />
+				</div>
+			</div>
+			<div class="input_flex">
+				<label>申請備考：</label> 
+				<textarea name="inputBiko" maxlength="100" placeholder="100文字以内記述可"></textarea>
+			</div>
+		</div>
+	</div>
+	
+	<div class="sizeM_btn souhu_btn">申請送付</div>
+</div>
+	
+	
+	
+	
+</body>
+</html>

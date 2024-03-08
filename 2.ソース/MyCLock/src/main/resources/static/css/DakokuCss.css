@@ -1,0 +1,62 @@
+/*勤怠打刻画面のタイトル*/
+.dakoku_title{
+	font-size: 60px;
+	padding: 20px 0px;
+	text-align: center;
+	margin:0;
+}
+/*勤怠ステータス*/
+.kinmu_status{
+	width: 200px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid rgb(0, 0, 0);
+	font-size: 30px;
+	background-color: rgb(255, 255, 255);
+	margin: auto;
+}
+.kinmu_status p{
+	margin: 0;
+}
+
+/*打刻時間エリア*/
+.date_area{
+	display: grid;
+	justify-content: center;
+	padding-top: 40px;
+}
+/*システム日付*/
+.system_date{
+	font-size: 20px;
+}
+/*時間表示エリア*/
+.date_now{
+	width: 500px;
+	height: 150px;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 80px;
+}
+
+
+/*ボタンが表示されるエリア*/
+.btn_area{
+	display: flex;
+	margin: 20px auto 0 auto;
+	justify-content: center;
+}
+/*ボタン初期値*/
+.syukkin_btn{
+	background-color: rgb(173, 225, 251);
+}
+.taikin_btn{
+	background-color: rgb(255, 190, 190);
+	margin-left: 20px;
+}
+.enable_btn{
+	background-color: rgb(128, 128, 128) !important;
+}
